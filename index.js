@@ -95,6 +95,16 @@ const questions = [
 
 
 // TODO: Create a function to initialize app
+function init () {
+  inquirer.prompt(questions)
+  .then((inquirerResponse) => {   
+      console.log("Making ReadMe");
+      fs.writeFileSync("ReadMe.md", generateMarkdown(inquirerResponse));
+  })
+  .catch((err) => {
+      console.log(err);
+  })
+}
 
 
 // Function call to initialize app
