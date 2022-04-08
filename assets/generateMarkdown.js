@@ -34,45 +34,53 @@ function generateMarkdown(data) {
   -[description](#description)
   -[installation](#installation)
   -[usage](#usage)
-  -[licenses](#licenses)
+  -[license](#license)
   -[contribution](#contribution)
   -[test](#test)
   -[username](#username)
   -[profile](#profile)
   
+  
+  ## username:
   ${data.username}
-  ##username:
   
+ 
+  ## project:
   ${data.project}
-  ##project:
-  
-  ${data.email}
-  ##email:
-  
-  
-  ${data.description}
-  ##description:
-  
-  ${data.installation}
-  ##installation:
-  
-  ${data.usage}
-  ##usage:
-  
-  ${data.contribution}
-  ##contribution:
-  
-  ${data.test}
-  ##test
 
+  
+  ## email:
+  ${data.email}
+  
+
+  ## description:
+  ${data.description}
+  
+ 
+  ## installation:
+  ${data.installation}
+
+  
+  ## usage:
+  ${data.usage}
+  
+  
+  ## contribution:
+  ${data.contribution}
+  
+  
+  ## test
+  ${data.test}
+  
   
   ## license:
   ${data.license}
+  
+  
+  
   ${renderLicenseBadge(data.license)}
 
  ` 
-
- 
 ;
 }
 
