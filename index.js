@@ -78,12 +78,6 @@ const questions = [
 
 { 
     type: "input",
-    name:"contribution",
-    message:"List your collaborators, if any"
-},
-
-{ 
-    type: "input",
     name:"test",
     message:"please provide examples on how to run your program, if any"
 },

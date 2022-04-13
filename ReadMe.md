@@ -18,23 +18,23 @@
   
  
   ## project:
-  portfolio-generator
+  Readme Generator
 
   
   ## email:
-  davisk28@email.franklin.edu
+  Davisk28@email.franklin.edu
   
 
   ## description:
-  Creating a Readme from the terminal using node.js
+  task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package (Links to an external site.). Review the Guide to a Professional README (Links to an external site.) as a reminder of everything that a high-quality, professional README should contain.
   
  
   ## installation:
-  run the application using node
+  The application will be invoked by using the following command: node index.js
 
   
   ## usage:
-  please answer all necessary questions
+  command-line application that accepts user input
   
   
   ## contribution:
@@ -42,7 +42,7 @@
   
   
   ## test
-  recording will be included
+  
   
   
   ## license:

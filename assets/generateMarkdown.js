@@ -5,11 +5,11 @@ function renderLicenseBadge(license) {
   let licenseType = license;
   let altLicense = ''
   
-  if(licenseType === 'MIT') {
-    "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-  } else if (licenseType === 'Boost') {
-    "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
-  } else if (licenseType === 'Mozilla') { "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+  if(license=== 'MIT') {
+   licenseType= "[![License: MIT] (https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  } else if (license === 'Boost') {
+   licenseType= "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
+  } else if (license === 'Mozilla') { licenseType= "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
     
   } else {
     licenseType = altLicense
@@ -497,35 +497,34 @@ DEALINGS IN THE SOFTWARE.
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.license)}
   
-  # Table of Content
-  -[description](#description)
-  -[installation](#installation)
-  -[usage](#usage)
-  -[license](#license)
-  -[contribution](#contribution)
-  -[test](#test)
-  -[username](#username)
-  -[profile](#profile)
-  
-  
-  ## username:
-  ${data.username}
-  
- 
   ## project:
   ${data.project}
 
+  ## description:
+  ${data.description}
+  
+  ## Table of Content
+  
+  *[description](#description)
+  *[username](#username)
+  *[email](#email)
+  *[installation](#installation)
+  *[usage](#usage)
+  *[test](#test)
+  *[license](#license)
+  
+  
+ 
+ 
+   ## username:
+  ${data.username}
+  
   
   ## email:
   ${data.email}
   
 
-  ## description:
-  ${data.description}
-  
- 
   ## installation:
   ${data.installation}
 
@@ -534,16 +533,14 @@ function generateMarkdown(data) {
   ${data.usage}
   
   
-  ## contribution:
-  ${data.contribution}
-  
-  
   ## test
   ${data.test}
   
   
   ## license:
   ${data.license}
+
+  ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license, data.name)}
 
