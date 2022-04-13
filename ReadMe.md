@@ -2,8 +2,7 @@
   MIT
   
   # Table of Content
-  -[description]
-  (#description)
+  -[description](#description)
   -[installation](#installation)
   -[usage](#usage)
   -[license](#license)
